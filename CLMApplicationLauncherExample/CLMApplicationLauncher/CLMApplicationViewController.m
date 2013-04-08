@@ -21,6 +21,14 @@
 // THE SOFTWARE.
 
 #import "CLMApplicationViewController.h"
+#import "CLMSplashScreen.h"
+#import "CLMApplicationState.h"
+
+@interface CLMApplicationViewController () <CLMSplashScreenDelegate>
+
+@property (nonatomic, strong) CLMSplashScreen *splashScreen;
+@property (nonatomic, strong) CLMApplicationState *state;
+@end
 
 @implementation CLMApplicationViewController
 
@@ -30,5 +38,24 @@
     
     self.launchBlock();
     self.completionBlock();
+}
+
+- (void)splashScreenCanBeRemoved
+{
+    self.state.splashScreenFinished = YES;
+    
+    if (self.state.applicationLaunchFinished)
+    {
+        [self removeSplashScreen];
+    }
+}
+
+- (void)removeSplashScreen
+{
+    [UIView animateWithDuration:0.5 animations:^{
+        [self.splashScreen setAlpha:0.0];
+    } completion:^(BOOL finished) {
+        [self.splashScreen removeFromSuperview];
+    }];
 }
 @end
