@@ -10,4 +10,15 @@
 
 @implementation CLMApplicationState
 
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+        _splashScreenFinished = NO;
+        _applicationLaunchFinished = NO;
+        _loggedIn = NO;
+    }
+    return self;
+}
 @end

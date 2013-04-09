@@ -19,6 +19,6 @@
 @protocol CLMSplashScreenDelegate <NSObject>
 
 @optional
-- (void)splashScreenCanBeRemoved;
+- (void)splashScreenCanBeRemoved:(CLMSplashScreen*)splashScreen;
 
 @end

@@ -28,6 +28,7 @@
 
 @property (nonatomic, strong) CLMSplashScreen *splashScreen;
 @property (nonatomic, strong) CLMApplicationState *state;
+@property (nonatomic, strong) UIViewController *mainViewController;
 @end
 
 @implementation CLMApplicationViewController
@@ -35,24 +36,35 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self.view setBackgroundColor:[UIColor blackColor]];
+    self.state = [[CLMApplicationState alloc] init];
+    self.splashScreen = [[CLMSplashScreen alloc] initWithFrame:self.view.bounds];
+    self.splashScreen.delegate = self;
+    [self.view addSubview:self.splashScreen];
     
-    self.launchBlock();
-    self.completionBlock();
+    if (self.launchBlock)
+    {
+        self.launchBlock();
+    }
+   
+    if (self.completionBlock)
+    {
+        self.completionBlock();
+    }
+ 
+    self.state.applicationLaunchFinished = YES;
 }
 
-- (void)splashScreenCanBeRemoved
+- (void)splashScreenCanBeRemoved:(CLMSplashScreen *)splashScreen
 {
     self.state.splashScreenFinished = YES;
     
-    if (self.state.applicationLaunchFinished)
-    {
-        [self removeSplashScreen];
-    }
+    [self removeSplashScreen];
 }
 
 - (void)removeSplashScreen
 {
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:1 animations:^{
         [self.splashScreen setAlpha:0.0];
     } completion:^(BOOL finished) {
         [self.splashScreen removeFromSuperview];

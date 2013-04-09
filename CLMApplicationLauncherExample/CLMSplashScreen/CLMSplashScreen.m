@@ -21,8 +21,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.imageView = [[UIImageView alloc] initWithFrame:frame];
-        self.imageView.image = [UIImage imageNamed:@"Splash"];
+        
     }
     return self;
 }
@@ -35,4 +34,15 @@
     // Drawing code
 }
 */
+
+- (void)layoutSubviews
+{
+    if (!self.imageView)
+    {
+        self.imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+        self.imageView.image = [UIImage imageNamed:@"Splash"];
+        [self addSubview:self.imageView];
+    }
+    [self.delegate splashScreenCanBeRemoved:self];
+}
 @end

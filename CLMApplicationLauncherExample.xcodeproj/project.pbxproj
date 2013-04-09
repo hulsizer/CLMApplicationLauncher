@@ -17,9 +17,13 @@
 		AF83BC3817114C300080674C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF83BC3717114C300080674C /* Default@2x.png */; };
 		AF83BC3A17114C300080674C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF83BC3917114C300080674C /* Default-568h@2x.png */; };
 		AFB444781711E73700E9A270 /* CLMApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB444771711E73700E9A270 /* CLMApplicationViewController.m */; };
+		AFD60D541713367500FED2DC /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD60D531713367500FED2DC /* Splash.png */; };
+		AFD60D56171391CB00FED2DC /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD60D55171391CB00FED2DC /* Default-Portrait@2x~ipad.png */; };
+		AFD60D58171391D000FED2DC /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD60D57171391D000FED2DC /* Default-Landscape@2x~ipad.png */; };
+		AFD60D5A171391D400FED2DC /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD60D59171391D400FED2DC /* Default-Portrait~ipad.png */; };
+		AFD60D5C171391D700FED2DC /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD60D5B171391D700FED2DC /* Default-Landscape~ipad.png */; };
 		AFE336E2171257F800034BA4 /* CLMSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE336E1171257F800034BA4 /* CLMSplashScreen.m */; };
 		AFE336E51712664900034BA4 /* CLMApplicationState.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE336E41712664800034BA4 /* CLMApplicationState.m */; };
-		AFE336E71712696200034BA4 /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = AFE336E61712696200034BA4 /* Splash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,11 +42,15 @@
 		AF83BC3917114C300080674C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AFB444761711E73700E9A270 /* CLMApplicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMApplicationViewController.h; sourceTree = "<group>"; };
 		AFB444771711E73700E9A270 /* CLMApplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMApplicationViewController.m; sourceTree = "<group>"; };
+		AFD60D531713367500FED2DC /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash.png; sourceTree = "<group>"; };
+		AFD60D55171391CB00FED2DC /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		AFD60D57171391D000FED2DC /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		AFD60D59171391D400FED2DC /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		AFD60D5B171391D700FED2DC /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		AFE336E0171257F800034BA4 /* CLMSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMSplashScreen.h; sourceTree = "<group>"; };
 		AFE336E1171257F800034BA4 /* CLMSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMSplashScreen.m; sourceTree = "<group>"; };
 		AFE336E31712664800034BA4 /* CLMApplicationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMApplicationState.h; sourceTree = "<group>"; };
 		AFE336E41712664800034BA4 /* CLMApplicationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMApplicationState.m; sourceTree = "<group>"; };
-		AFE336E61712696200034BA4 /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Splash.png; path = ../../../../../Desktop/Splash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 		AF83BC1717114C300080674C = {
 			isa = PBXGroup;
 			children = (
+				AFD60D5B171391D700FED2DC /* Default-Landscape~ipad.png */,
+				AFD60D59171391D400FED2DC /* Default-Portrait~ipad.png */,
+				AFD60D57171391D000FED2DC /* Default-Landscape@2x~ipad.png */,
+				AFD60D55171391CB00FED2DC /* Default-Portrait@2x~ipad.png */,
 				AF83BC2917114C300080674C /* CLMApplicationLauncherExample */,
 				AF83BC2217114C300080674C /* Frameworks */,
 				AF83BC2117114C300080674C /* Products */,
@@ -89,11 +101,11 @@
 		AF83BC2917114C300080674C /* CLMApplicationLauncherExample */ = {
 			isa = PBXGroup;
 			children = (
+				AFD60D531713367500FED2DC /* Splash.png */,
 				AFE336DF1712577400034BA4 /* CLMSplashScreen */,
 				AFB444751711E6B100E9A270 /* CLMApplicationLauncher */,
 				AF83BC3217114C300080674C /* CLMAppDelegate.h */,
 				AF83BC3317114C300080674C /* CLMAppDelegate.m */,
-				AFE336E61712696200034BA4 /* Splash.png */,
 				AF83BC2A17114C300080674C /* Supporting Files */,
 			);
 			path = CLMApplicationLauncherExample;
@@ -189,7 +201,11 @@
 				AF83BC3617114C300080674C /* Default.png in Resources */,
 				AF83BC3817114C300080674C /* Default@2x.png in Resources */,
 				AF83BC3A17114C300080674C /* Default-568h@2x.png in Resources */,
-				AFE336E71712696200034BA4 /* Splash.png in Resources */,
+				AFD60D541713367500FED2DC /* Splash.png in Resources */,
+				AFD60D56171391CB00FED2DC /* Default-Portrait@2x~ipad.png in Resources */,
+				AFD60D58171391D000FED2DC /* Default-Landscape@2x~ipad.png in Resources */,
+				AFD60D5A171391D400FED2DC /* Default-Portrait~ipad.png in Resources */,
+				AFD60D5C171391D700FED2DC /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
